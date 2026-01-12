@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Web Development",
+      "description": "We build digital landscapes that stand as tall and firm as the Sierra peaks. Our custom website solutions focus on rock-solid performance, speed, and SEO readiness."
+    },
+    {
+      "id": 2,
+      "title": "Application Development",
+      "description": "Navigate the digital wild with custom applications designed to handle the toughest terrains. We create user-centric mobile and web apps."
+    },
+    {
+      "id": 3,
+      "title": "Local SEO",
+      "description": "Be the first landmark your customers find. We elevate your local visibility so you can stand out in your community, including Google Maps optimization."
+    },
+    {
+      "id": 4,
+      "title": "WordPress | Shopify | Ecommerce",
+      "description": "Create an online storefront as vast and accessible as the great outdoors. We build eCommerce platforms that turn visitors into explorers of your products."
+    },
+    {
+      "id": 5,
+      "title": "AI Business Development",
+      "description": "Are you using the correct prompts? Have you streamlined your daily computer tasks? Unlock intelligent automation with our AI development services."
+    },
+    {
+      "id": 6,
+      "title": "Back Country Fishing + Hiking Experiences",
+      "description": "Guided backcountry fishing and hiking experiences in pristine, remote landscapes. Discover hidden trails and untouched waters with expert local guides."
+    }
+  ]
+}
