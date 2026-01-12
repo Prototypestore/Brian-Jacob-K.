@@ -1,1 +1,228 @@
+/* ===============================
+   BASE RESET
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #f7f8f9;
+  color: #111827;
+  line-height: 1.7;
+}
+
+/* ===============================
+   GLOBAL CONTAINERS
+================================ */
+main,
+header,
+footer {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===============================
+   HEADER (COLD / CLEAN)
+================================ */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 1000;
+}
+
+header nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #111827;
+  transition: color 0.25s ease;
+}
+
+header a:hover {
+  color: #8fa9a3;
+}
+
+/* ===============================
+   CAROUSEL SECTION
+================================ */
+#carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0 5rem;
+  background: linear-gradient(
+    to bottom,
+    #eef2f3,
+    #f7f8f9
+  );
+}
+
+/* matches your existing carousel JS */
+.carousel {
+  position: relative;
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-frame {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.carousel-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  padding: 2rem;
+}
+
+/* Carousel buttons */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(17,24,39,0.6);
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav:hover {
+  background: rgba(17,24,39,0.85);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.nav.prev {
+  left: -20px;
+}
+
+.nav.next {
+  right: -20px;
+}
+
+/* ===============================
+   CONTENT SECTION
+================================ */
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Example service cards (JSON-driven) */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.section p {
+  max-width: 640px;
+  font-size: 1.05rem;
+  color: #6b7280;
+}
+
+/* ===============================
+   FOOTER (COZY / QUIET)
+================================ */
+footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 3rem 1.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+footer img {
+  width: 28px;
+  height: auto;
+  opacity: 0.85;
+}
+
+/* ===============================
+   RESPONSIVE POLISH
+================================ */
+@media (max-width: 768px) {
+  header ul {
+    gap: 1.5rem;
+  }
+
+  #carousel {
+    padding: 3rem 1rem;
+  }
+
+  .nav.prev {
+    left: 5px;
+  }
+
+  .nav.next {
+    right: 5px;
+  }
+
+  #content {
+    padding: 4rem 1.2rem;
+  }
+}
 
