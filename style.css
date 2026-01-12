@@ -33,23 +33,34 @@ header {
   backdrop-filter: blur(6px);
   border-bottom: 1px solid #e5e7eb;
   z-index: 1000;
-}
 
-header nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.2rem 1.5rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
+/* Logo */
+header img {
+  height: 42px;
+  width: auto;
+  display: block;
+  padding: 0.8rem 1.5rem;
+}
+
+/* Centered nav */
+header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Nav list */
 header ul {
   display: flex;
   gap: 2.5rem;
   list-style: none;
 }
 
+/* Links */
 header a {
   text-decoration: none;
   font-weight: 500;
@@ -269,6 +280,10 @@ footer img {
 @media (max-width: 768px) {
   header ul {
     gap: 1.5rem;
+  }
+
+   header img {
+    height: 34px;
   }
 
   #carousel {
