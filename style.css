@@ -114,8 +114,8 @@ main > #carousel {
 /* Center container */
 .carousel {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +132,7 @@ main > #carousel {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  box-shadow: none;
 }
 
 /* Image inside circle */
@@ -153,23 +153,17 @@ main > #carousel {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
   width: 40px;
   height: 40px;
-
   border-radius: 50%;
   border: none;
-
   background: rgba(17,24,39,0.65);
   color: #ffffff;
-
   font-size: 1.3rem;
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition:
     background 0.3s ease,
     transform 0.2s ease;
