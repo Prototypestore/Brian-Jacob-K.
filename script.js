@@ -10,7 +10,7 @@ fetch("content.json")
     header.className = "services-header";
 
     const h1 = document.createElement("h1");
-    h1.textContent = "Our Services";
+    h1.textContent = "Services";
 
     const intro = document.createElement("p");
     intro.textContent =
