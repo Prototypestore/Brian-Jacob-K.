@@ -1,14 +1,14 @@
 {
   "carousel": [
-    { "id": 1, "image": "img1.jpg" },
-    { "id": 2, "image": "img2.jpg" },
-    { "id": 3, "image": "img3.jpg" },
-    { "id": 4, "image": "img4.jpg" },
-    { "id": 5, "image": "img5.jpg" },
-    { "id": 6, "image": "img6.jpg" },
-    { "id": 7, "image": "img7.jpg" },
-    { "id": 8, "image": "img8.jpg" },
-    { "id": 9, "image": "img9.jpg" },
-    { "id": 10, "image": "img10.jpg" }
+    { "id": 1, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/Untitled-design-6-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 2, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/Untitled-design-10-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 3, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/2-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 4, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/1-1-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 5, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/4-1-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 6, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/5-1-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 7, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/Untitled-design-7-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 8, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/8-1-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 9, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/Untitled-design-9-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" },
+    { "id": 10, "image": "https://bkwebdev.online/wp-content/uploads/elementor/thumbs/3-rh9inb8t9s56jqhiqxpj1ot3xesgw1qck6pt5lkcyg.png" }
   ]
 }
