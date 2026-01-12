@@ -15,18 +15,12 @@ body {
 }
 
 /* ===============================
-   GLOBAL CONTAINERS
+   GLOBAL STRUCTURE
 ================================ */
-main,
 header,
+main,
 footer {
   width: 100%;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
 }
 
 /* ===============================
@@ -74,7 +68,7 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0 5rem;
+  padding: 4rem 1.5rem 5rem;
   background: linear-gradient(
     to bottom,
     #eef2f3,
@@ -82,7 +76,6 @@ header a:hover {
   );
 }
 
-/* matches your existing carousel JS */
 .carousel {
   position: relative;
   max-width: 640px;
@@ -132,16 +125,11 @@ header a:hover {
   transform: translateY(-50%) scale(1.05);
 }
 
-.nav.prev {
-  left: -20px;
-}
-
-.nav.next {
-  right: -20px;
-}
+.nav.prev { left: -20px; }
+.nav.next { right: -20px; }
 
 /* ===============================
-   CONTENT SECTION
+   SERVICES (JSON-DRIVEN)
 ================================ */
 #content {
   max-width: 1200px;
@@ -149,27 +137,75 @@ header a:hover {
   padding: 5rem 1.5rem 6rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 4.5rem;
 }
 
-/* Example service cards (JSON-driven) */
-.section {
+/* Section header */
+.services-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   text-align: center;
 }
 
-.section h2 {
-  font-size: 2rem;
+.services-header h1,
+.services-header h2 {
+  font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
-.section p {
+.services-header p {
   max-width: 640px;
   font-size: 1.05rem;
+  color: #6b7280;
+}
+
+/* Grid */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.8rem;
+  justify-content: center;
+}
+
+/* Card — border only */
+.service-card {
+  flex: 1 1 280px;
+  max-width: 340px;
+
+  background: transparent;
+  border: 1px solid #d1d5db;
+
+  border-radius: 18px;
+  padding: 2.6rem 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  transition:
+    border-color 0.3s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: #8fa9a3;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.65;
   color: #6b7280;
 }
 
@@ -180,9 +216,6 @@ footer {
   background: #ffffff;
   border-top: 1px solid #e5e7eb;
   padding: 3rem 1.5rem;
-}
-
-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,16 +246,18 @@ footer img {
     padding: 3rem 1rem;
   }
 
-  .nav.prev {
-    left: 5px;
-  }
-
-  .nav.next {
-    right: 5px;
-  }
+  .nav.prev { left: 5px; }
+  .nav.next { right: 5px; }
 
   #content {
     padding: 4rem 1.2rem;
   }
-}
 
+  .services-grid {
+    gap: 2rem;
+  }
+
+  .service-card {
+    padding: 2.2rem 2rem;
+  }
+}
