@@ -64,7 +64,7 @@ header {
 
 /* Logo */
 header .logo img {
-  height: 42px;
+  height: 75px;
   width: auto;
   display: block;
   padding: 0.8rem 1.5rem;
@@ -114,8 +114,8 @@ main > #carousel {
 /* Center container */
 .carousel {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +127,7 @@ main > #carousel {
   height: 250px;
   overflow: hidden;
   border-radius: 50%;
-  background: #ffffff;
+  background: transparent;
   border: 1px solid #d1d5db;
   display: flex;
   align-items: center;
