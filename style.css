@@ -62,13 +62,13 @@ header a:hover {
 }
 
 /* ===============================
-   CAROUSEL SECTION
+   CAROUSEL SECTION (CIRCULAR LOGOS)
 ================================ */
 #carousel {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 1.5rem 5rem;
+  padding: 5rem 1.5rem;
   background: linear-gradient(
     to bottom,
     #eef2f3,
@@ -76,57 +76,86 @@ header a:hover {
   );
 }
 
+/* Center container */
 .carousel {
   position: relative;
-  max-width: 640px;
-  width: 100%;
+  width: 250px;
+  height: 250px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Circular frame */
 .carousel-frame {
-  width: 100%;
+  width: 250px;
+  height: 250px;
+
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 50%;
+
   background: #ffffff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid #d1d5db;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
 }
 
+/* Image inside circle */
 .carousel-frame img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: contain;
-  padding: 2rem;
+
+  padding: 2.2rem;
+  display: block;
 }
 
-/* Carousel buttons */
+/* ===============================
+   CAROUSEL BUTTONS
+================================ */
 .nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 42px;
-  height: 42px;
+
+  width: 40px;
+  height: 40px;
+
   border-radius: 50%;
   border: none;
-  background: rgba(17,24,39,0.6);
+
+  background: rgba(17,24,39,0.65);
   color: #ffffff;
-  font-size: 1.5rem;
+
+  font-size: 1.3rem;
   cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease, transform 0.2s ease;
+
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
 }
 
 .nav:hover {
   background: rgba(17,24,39,0.85);
-  transform: translateY(-50%) scale(1.05);
+  transform: translateY(-50%) scale(1.08);
 }
 
-.nav.prev { left: -20px; }
-.nav.next { right: -20px; }
+.nav.prev {
+  left: -55px;
+}
+
+.nav.next {
+  right: -55px;
+}
 
 /* ===============================
    SERVICES (JSON-DRIVEN)
@@ -259,5 +288,28 @@ footer img {
 
   .service-card {
     padding: 2.2rem 2rem;
+  }
+}
+
+/* ===============================
+   RESPONSIVE ADJUSTMENT
+================================ */
+@media (max-width: 480px) {
+  .carousel {
+    width: 200px;
+    height: 200px;
+  }
+
+  .carousel-frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nav.prev {
+    left: -45px;
+  }
+
+  .nav.next {
+    right: -45px;
   }
 }
