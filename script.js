@@ -1,34 +1,44 @@
 fetch("content.json")
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
     const main = document.getElementById("content");
 
-    // Title
-    const title = document.createElement("h1");
-    title.textContent = data.title;
+    const section = document.createElement("section");
+    section.className = "services-section";
 
-    // Description
-    const desc = document.createElement("p");
-    desc.textContent = data.description;
+    const header = document.createElement("div");
+    header.className = "services-header";
 
-    main.appendChild(title);
-    main.appendChild(desc);
+    const h1 = document.createElement("h1");
+    h1.textContent = "Our Services";
 
-    // Sections
-    data.sections.forEach(section => {
-      const sectionEl = document.createElement("section");
+    const intro = document.createElement("p");
+    intro.textContent =
+      "Built for cold climates, rugged terrain, and modern digital explorers.";
 
-      const h2 = document.createElement("h2");
-      h2.textContent = section.heading;
+    header.appendChild(h1);
+    header.appendChild(intro);
+
+    const grid = document.createElement("div");
+    grid.className = "services-grid";
+
+    data.services.forEach(service => {
+      const card = document.createElement("div");
+      card.className = "service-card";
+
+      const h3 = document.createElement("h3");
+      h3.textContent = service.title;
 
       const p = document.createElement("p");
-      p.textContent = section.text;
+      p.textContent = service.description;
 
-      sectionEl.appendChild(h2);
-      sectionEl.appendChild(p);
-      main.appendChild(sectionEl);
+      card.appendChild(h3);
+      card.appendChild(p);
+      grid.appendChild(card);
     });
+
+    section.appendChild(header);
+    section.appendChild(grid);
+    main.appendChild(section);
   })
-  .catch(error => {
-    console.error("Error loading JSON:", error);
-  });
+  .catch(err => console.error("JSON load error:", err));
