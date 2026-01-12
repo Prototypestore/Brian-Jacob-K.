@@ -165,7 +165,7 @@ main > #carousel {
   height: 250px;
   overflow: hidden;
   border-radius: 50%;
-  background: transparent;
+  background: #ffffff;
   border: 1px solid #d1d5db;
   display: flex;
   align-items: center;
