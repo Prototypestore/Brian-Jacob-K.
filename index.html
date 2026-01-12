@@ -8,7 +8,9 @@
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="https://bkwebdev.online/wp-content/uploads/2026/01/cropped-bklogotest-4-scaled-1-e1768212534742.png" alt="BK's Logo"/></a>
+    <a href="index.html" class="logo">
+      <img src="https://bkwebdev.online/wp-content/uploads/2026/01/cropped-bklogotest-4-scaled-1-e1768212534742.png" alt="BK Web Dev Logo"/>
+    </a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -17,12 +19,18 @@
       </ul>
     </nav>
   </header>
-  <main id="carousel"></main>
-  <main id="content"></main>
+  <!-- ONE main element only -->
+  <main>
+    <!-- Carousel section -->
+    <section id="carousel"></section>
+    <!-- JSON-driven content -->
+    <section id="content"></section>
+  </main>
   <footer>
     <p>Leave a voicemail</p>
     <p>Or</p>
-    <a href="tel:+19162157793"><img src="Logo.svg" alt="Whatsapp logo."/></a>
+    <a href="tel:+19162157793">
+      <img src="Logo.svg" alt="Whatsapp logo."/></a>
     <p>© BKWebDev 2026</p>
   </footer>
   <script src="script.js"></script>
