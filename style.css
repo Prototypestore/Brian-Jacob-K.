@@ -272,9 +272,9 @@ footer p {
 }
 
 footer img {
-  width: 30px;
-  height: auto;
-  opacity: 0.85;
+   height: 48px;
+   width: auto;
+   opacity: 0.85;
 }
 
 /* ===============================
