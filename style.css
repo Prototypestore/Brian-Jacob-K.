@@ -133,6 +133,10 @@ header ul {
   }
 }
 
+.gold-shine::before {
+  animation: goldShine 1.4s ease-in-out;
+}
+
 /* Links */
 header a {
   text-decoration: none;
