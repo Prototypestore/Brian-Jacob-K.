@@ -7,11 +7,29 @@
   padding: 0;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'Segoe UI', Roboto, sans-serif;
-  background: #f7f8f9;
   color: #111827;
   line-height: 1.7;
+  /* FULL-PAGE SNOW BACKGROUND */
+  background-image: url("Snow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(247, 248, 249, 0.88);
+  z-index: -1;
 }
 
 /* ===============================
