@@ -149,3 +149,56 @@ header a:hover {
   color: #8fa9a3;
 }
 
+/* ===============================
+   INFO-SECTION
+================================ */
+.info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.info h1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 40px;
+   margin-bottom: 10px;
+   color: #000000;
+}
+
+.info p {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
+   margin-bottom: 5px;
+   max-width: 350px;
+   color: #000000;
+}
+
+/* ===============================
+   FOOTER (COZY / QUIET)
+================================ */
+footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+footer img {
+   height: 48px;
+   width: auto;
+   opacity: 0.85;
+}
